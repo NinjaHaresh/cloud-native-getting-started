@@ -9,7 +9,7 @@ CIC can be deployed in two modes,
 ###### Note: This tutorial is for learning different CIC deployment modes and not to be considered as end user example. Real world examples will use either one/both CIC modes with other use cases. 
 **Prerequisite**: Kubernetes cluster (Below example is tested in on-prem v1.17.0 K8s cluster).
 
-1. Lets deploy CIC as a sidecar with Citrix ADC CPX proxy
+1. Lets deploy CIC as a sidecar with Citrix ADC CPX proxy. Please note this guide requires you to use the default namespace.
 ```
 kubectl create -f https://raw.githubusercontent.com/citrix/cloud-native-getting-started/master/beginners-guide/manifest/cpx.yaml
 kubectl get pods -l app=cpx-ingress
